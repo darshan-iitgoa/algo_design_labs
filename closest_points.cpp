@@ -123,7 +123,9 @@ int main() {
         new Point(-1.9, -4.1),
         new Point(4.4,  1.1)
     };
-    double ans = min_dist_brute(points);
-    cout << ans << endl;
+    double ans1 = solve(points);
+    double ans2 = min_dist_brute(points);
+    cout << "Strip Method: " << ans1<< endl;
+    cout << "Brute Force: " << ans2 << endl;
     return 0;
 }
